@@ -1,6 +1,6 @@
 # alfabetokids_web
 
-Aplicativo para educacao feito em flutter pelo projeto apps4society.
+Aplicação voltada para educação feita em flutter pelo projeto apps4society.
 
 ## Getting Started
 
