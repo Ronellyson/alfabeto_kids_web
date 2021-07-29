@@ -9,7 +9,7 @@ class ThemeSelectionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        height: 950,
+        height: MediaQuery.of(context).size.height*1.5,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
               end: Alignment(0, 1.5),
@@ -22,7 +22,7 @@ class ThemeSelectionPage extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: PreferredSize(
-            preferredSize: Size.fromHeight(50),
+            preferredSize: Size.fromHeight(120),
             child: AppBarWidget(),
           ),
           body: ListCardsWidget(),

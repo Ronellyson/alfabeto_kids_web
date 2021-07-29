@@ -9,20 +9,23 @@ class AppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-      child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            GestureDetector(
-              onTap: (){},
-              child: Image.asset(AppImages.home),
-            ),
-            Text("Temas", style: TextStyles.title),
-            GestureDetector(
-              onTap: (){},
-              child: Image.asset(AppImages.addTemas),
-            ),
-          ],
-        ),
+      child: Container(
+        height: 120,
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              GestureDetector(
+                onTap: (){},
+                child: Image.asset(AppImages.home, height: 60,),
+              ),
+              Text("Temas", style: TextStyles.title),
+              GestureDetector(
+                onTap: (){},
+                child: Image.asset(AppImages.addTemas, height: 60,),
+              ),
+            ],
+          ),
+      ),
     );
   }
 }

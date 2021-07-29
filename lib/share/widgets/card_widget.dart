@@ -21,9 +21,12 @@ class CardWidget extends StatelessWidget {
                 child: Image.asset(image, width: 100),
               ),
               SizedBox(
-                width: 230,
+                width: 200,
                 child:  Text(imageText, style: TextStyles.title),
               ),
+              SizedBox(
+                width: 2,
+              )
             ],
           ),
         )
