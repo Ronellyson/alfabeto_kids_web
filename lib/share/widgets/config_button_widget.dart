@@ -12,7 +12,7 @@ class ConfigButtonWidget extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(AppImages.configButton, height: 120),
-            Text("Config.", style: TextStyles.titleHome)
+            Text("Config.", style: TextStyles.regular)
           ],
         ),
       )

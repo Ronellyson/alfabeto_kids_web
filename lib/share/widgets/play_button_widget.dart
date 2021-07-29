@@ -13,7 +13,7 @@ class PlayButtonWidget extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(AppImages.playButton, height: 120),
-            Text("Jogar", style: TextStyles.titleHome)
+            Text("Jogar", style: TextStyles.regular)
           ],
         )
       ),

@@ -13,7 +13,7 @@ class InfoButtonWidget extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(AppImages.infoButton, height: 120),
-            Text("Sobre", style: TextStyles.titleHome)
+            Text("Sobre", style: TextStyles.regular)
           ],
         )
       ),
