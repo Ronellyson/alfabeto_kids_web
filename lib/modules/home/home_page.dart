@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
     return Container(
       decoration: const BoxDecoration(
           gradient: LinearGradient(
-            end: Alignment(0, 1.5),
+            end: Alignment(0, 0.5),
             begin: Alignment.topCenter,
             colors: <Color>[
               Color(0xFF38CB3C),
