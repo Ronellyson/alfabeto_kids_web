@@ -13,22 +13,58 @@ class ListThemesWidget extends StatefulWidget {
 class _ListThemesWidget extends State<ListThemesWidget> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        GestureDetector(
-            onTap: () async {
-              await Navigator.pushNamed(context, 'levelSelection');
-              setState(() {});
-            },
-            child: CardWidget(image: AppImages.cores, imageText: "cores")
-        ),
-        CardWidget(image: AppImages.objetos, imageText: "objetos"),
-        CardWidget(image: AppImages.frutas, imageText: "frutas"),
-        CardWidget(image: AppImages.animais, imageText: "animais"),
-        CardWidget(image: AppImages.brinquedos, imageText: "brinquedos"),
-        CardWidget(image: AppImages.corpo, imageText: "partes do corpo"),
-        CardWidget(image: AppImages.paises, imageText: "paises"),
-      ],
+    return Container(
+      width: MediaQuery.maybeOf(context)!.size.width,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          GestureDetector(
+              onTap: () async {
+                await Navigator.pushNamed(context, 'levelSelection');
+                setState(() {});
+              },
+              child: Container(
+                  width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.5 : MediaQuery.maybeOf(context)!.size.width,
+                  child: CardWidget(image: AppImages.cores, imageText: "cores"))
+          ),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.05 : MediaQuery.maybeOf(context)!.size.height*0.02,
+          ),
+          Container(
+              width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.5 : MediaQuery.maybeOf(context)!.size.width,
+              child: CardWidget(image: AppImages.objetos, imageText: "objetos")),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.05 : MediaQuery.maybeOf(context)!.size.height*0.02,
+          ),
+          Container(
+              width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.5 : MediaQuery.maybeOf(context)!.size.width,
+              child: CardWidget(image: AppImages.frutas, imageText: "frutas")),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.05 : MediaQuery.maybeOf(context)!.size.height*0.02,
+          ),
+          Container(
+              width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.5 : MediaQuery.maybeOf(context)!.size.width,
+              child: CardWidget(image: AppImages.animais, imageText: "animais")),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.05 : MediaQuery.maybeOf(context)!.size.height*0.02,
+          ),
+          Container(
+              width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.5 : MediaQuery.maybeOf(context)!.size.width,
+              child: CardWidget(image: AppImages.brinquedos, imageText: "brinquedos")),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.05 : MediaQuery.maybeOf(context)!.size.height*0.02,
+          ),
+          Container(
+              width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.5 : MediaQuery.maybeOf(context)!.size.width,
+              child: CardWidget(image: AppImages.corpo, imageText: "partes do corpo")),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.05 : MediaQuery.maybeOf(context)!.size.height*0.02,
+          ),
+          Container(
+              width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.5 : MediaQuery.maybeOf(context)!.size.width,
+              child: CardWidget(image: AppImages.paises, imageText: "paises")),
+        ],
+      ),
     );
   }
 }

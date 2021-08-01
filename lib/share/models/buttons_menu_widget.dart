@@ -13,43 +13,41 @@ class ButtonsMenuWidget extends StatefulWidget {
 class _ButtonsMenuWidgetState extends State<ButtonsMenuWidget> {
   @override
   Widget build(BuildContext context) {
+
     return Stack(
       children: [
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            PlayButtonWidget(),
             Container(
-              height: 150,
-              width: 150,
-            )
+                alignment: Alignment.centerLeft,
+                width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.3 : MediaQuery.maybeOf(context)!.size.width*0.8,
+                child: PlayButtonWidget()),
           ],
         ),
 
         Padding(
-          padding: const EdgeInsets.only(top: 100),
+          padding: const EdgeInsets.only(top: 160),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                height: 150,
-                width: 150,
-              ),
-              ConfigButtonWidget()
+                  alignment: Alignment.centerRight,
+                  width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.3 : MediaQuery.maybeOf(context)!.size.width*0.8,
+                  child: ConfigButtonWidget())
             ],
           ),
         ),
 
         Padding(
-          padding: const EdgeInsets.only(top: 250),
+          padding: const EdgeInsets.only(top: 320),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              InfoButtonWidget(),
               Container(
-                height: 150,
-                width: 150,
-              )
+                  alignment: Alignment.centerLeft,
+                  width: MediaQuery.maybeOf(context)!.size.width > 950 ? MediaQuery.maybeOf(context)!.size.width*0.3 : MediaQuery.maybeOf(context)!.size.width*0.8,
+                  child: InfoButtonWidget()),
             ],
           ),
         ),

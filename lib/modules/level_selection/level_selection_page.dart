@@ -9,7 +9,7 @@ class LevelSelectionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        height: MediaQuery.of(context).size.height,
+        height: MediaQuery.of(context).size.height > 950 ? MediaQuery.of(context).size.height : MediaQuery.of(context).size.height*1.4,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
               end: Alignment(0, 0.5),

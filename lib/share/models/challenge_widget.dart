@@ -20,7 +20,8 @@ class _ChallengeWidgetState extends State<ChallengeWidget> {
             child: Row(
               children: [
                 Container(
-                  width: MediaQuery.maybeOf(context)!.size.width*0.79,
+                  width: MediaQuery.of(context).size.width > 950 ? MediaQuery.of(context).size.width*0.9 : MediaQuery.of(context).size.width*0.8,
+                  alignment: Alignment.center,
                   child: Image.asset(AppImages.tv),
                 ),
                 Image.asset(AppImages.falar)

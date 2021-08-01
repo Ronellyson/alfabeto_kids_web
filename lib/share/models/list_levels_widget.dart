@@ -13,17 +13,28 @@ class ListLevelsWidget extends StatefulWidget {
 class _ListLevelsWidget extends State<ListLevelsWidget> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        GestureDetector(
-            onTap: () async {
-              await Navigator.pushNamed(context, 'challenge');
-              setState(() {});
-            },
-            child: CardWidget(image: AppImages.vogais, imageText: "Vogais")),
-        CardWidget(image: AppImages.consoantes, imageText: "Consoantes"),
-        CardWidget(image: AppImages.alfabeto, imageText: "Alfabeto"),
-      ],
+    return Container(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.12 : MediaQuery.maybeOf(context)!.size.height*0.02,
+          ),
+          GestureDetector(
+              onTap: () async {
+                await Navigator.pushNamed(context, 'challenge');
+                setState(() {});
+              },
+              child: CardWidget(image: AppImages.vogais, imageText: "Vogais")),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.1 : MediaQuery.maybeOf(context)!.size.height*0.05,
+          ),
+          CardWidget(image: AppImages.consoantes, imageText: "Consoantes"),
+          SizedBox(
+            height: MediaQuery.maybeOf(context)!.size.height > 950 ? MediaQuery.maybeOf(context)!.size.height*0.1 : MediaQuery.maybeOf(context)!.size.height*0.05,
+          ),
+          CardWidget(image: AppImages.alfabeto, imageText: "Alfabeto"),
+        ],
+      ),
     );
   }
 }

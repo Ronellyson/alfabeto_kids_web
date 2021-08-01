@@ -13,27 +13,25 @@ class CardWidget extends StatefulWidget {
 class _CardWidgetState extends State<CardWidget> {
   @override
   Widget build(BuildContext context) {
-    var paddingTop = 0.0;
-    if (widget.imageText == "Vogais" || widget.imageText == "Consoantes" || widget.imageText == "Alfabeto") paddingTop = 70.0;
+    var paddingTop = 1.0;
+    var tamanhoSizeBox = 0.06;
+    if (widget.imageText == "Vogais" || widget.imageText == "Consoantes" || widget.imageText == "Alfabeto") paddingTop = 80.0;
 
-
-    return Container(
+      return Container(
       child: Padding(
         padding: EdgeInsets.only(top: paddingTop),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if (widget.imageText == "Vogais" || widget.imageText == "Consoantes" || widget.imageText == "Alfabeto") SizedBox(width: 8.0),
-            Padding(
-              padding: const EdgeInsets.only(left: 20.0),
+            Container(
               child: Image.asset(widget.image, width: 100),
             ),
             SizedBox(
-              width: 200,
-              child:  Text(widget.imageText, style: TextStyles.title),
+              width: MediaQuery.maybeOf(context)!.size.width*tamanhoSizeBox,
             ),
-            SizedBox(
-              width: 2.0,
+            Container(
+              width: 190,
+              child: Text(widget.imageText, style: TextStyles.title),
             )
           ],
         ),

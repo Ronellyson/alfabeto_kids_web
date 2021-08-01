@@ -12,21 +12,24 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            end: Alignment(0, 0.5),
-            begin: Alignment.topCenter,
-            colors: <Color>[
-              Color(0xFF38CB3C),
-              Color(0xFF1BC1B5)
-            ]
-          ),),
-      child: Column(
-        children: [
-          LogoWidget(),
-          ButtonsMenuWidget()
-        ],
+    return SingleChildScrollView(
+      child: Container(
+        height: MediaQuery.maybeOf(context)!.size.height*1.1,
+        decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              end: Alignment(0, 0.5),
+              begin: Alignment.topCenter,
+              colors: <Color>[
+                Color(0xFF38CB3C),
+                Color(0xFF1BC1B5)
+              ]
+            ),),
+        child: Column(
+          children: [
+            LogoWidget(),
+            ButtonsMenuWidget()
+          ],
+        ),
       ),
     );
   }

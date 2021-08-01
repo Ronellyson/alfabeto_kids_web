@@ -32,7 +32,14 @@ class _AppBarWidgetState extends State<AppBarWidget> {
                       setState(() {});
                     },
                   child: Image.asset(AppImages.back, height: 60,),
-                ) : GestureDetector(
+                ) : widget.title == "Sobre" ? GestureDetector(
+                onTap: () async {
+                  await Navigator.pushNamed(context, 'home');
+                  setState(() {});
+                },
+                child: Image.asset(AppImages.home, height: 60,),
+                )
+                  : GestureDetector(
                 onTap: () async {
                   await Navigator.pushNamed(context, 'levelSelection');
                   setState(() {});
@@ -42,12 +49,9 @@ class _AppBarWidgetState extends State<AppBarWidget> {
 
               Text(widget.title, style: TextStyles.title),
 
-              widget.title == "Temas" ? GestureDetector(
-                  onTap: (){},
-                  child: Image.asset(AppImages.addTemas, height: 60,)
-              ) : SizedBox(width: MediaQuery.of(context).size.width*0.1,),
+              SizedBox(width: MediaQuery.of(context).size.width*0.05,),
 
-              if(widget.title !="Níveis" && widget.title!= "Temas") GestureDetector(
+              if(widget.title !="Níveis" && widget.title!= "Temas" && widget.title != "Sobre") GestureDetector(
                 onTap: () async {
                 await Navigator.pushNamed(context, 'home');
                 setState(() {});

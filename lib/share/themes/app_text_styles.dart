@@ -11,9 +11,16 @@ class TextStyles {
   );
 
   static final regular = GoogleFonts.lexendDeca(
-    fontSize: 24,
+    fontSize: 22,
     fontWeight: FontWeight.w400,
     color: AppColors.secondary,
     decoration: TextDecoration.none
+  );
+
+  static final small = GoogleFonts.lexendDeca(
+      fontSize: 14,
+      fontWeight: FontWeight.w200,
+      color: AppColors.secondary,
+      decoration: TextDecoration.none
   );
 }
