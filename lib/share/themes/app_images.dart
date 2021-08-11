@@ -3,6 +3,8 @@ class AppImages {
   static const tv = "assets/images/tv.png";
   static const palavratelevisao = "assets/images/televisão.png";
   static const back = "assets/images/back.png";
+  static const save = "assets/images/salvar.png";
+  static const visualizacao = "assets/images/visualização.png";
   static const cancel = "assets/images/cancel.png";
   static const keyboard = "assets/images/keyboard.png";
   static const vogaisKeyboard = "assets/images/vogaisKeyboard.png";

@@ -1,6 +1,6 @@
-import 'package:alfabetokids_web/share/widgets/config_button_widget.dart';
-import 'package:alfabetokids_web/share/widgets/info_button_widget.dart';
-import 'package:alfabetokids_web/share/widgets/play_button_widget.dart';
+import 'package:alfabetokids_web/share/widgets/config_button_widget/config_button_widget.dart';
+import 'package:alfabetokids_web/share/widgets/info_button_widget/info_button_widget.dart';
+import 'package:alfabetokids_web/share/widgets/play_button_widget/play_button_widget.dart';
 import 'package:flutter/material.dart';
 
 class ButtonsMenuWidget extends StatefulWidget {
@@ -27,7 +27,7 @@ class _ButtonsMenuWidgetState extends State<ButtonsMenuWidget> {
         ),
 
         Padding(
-          padding: const EdgeInsets.only(top: 160),
+          padding: EdgeInsets.only(top: MediaQuery.maybeOf(context)!.size.height*0.2),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -40,7 +40,7 @@ class _ButtonsMenuWidgetState extends State<ButtonsMenuWidget> {
         ),
 
         Padding(
-          padding: const EdgeInsets.only(top: 320),
+          padding: EdgeInsets.only(top: MediaQuery.maybeOf(context)!.size.height*0.4),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

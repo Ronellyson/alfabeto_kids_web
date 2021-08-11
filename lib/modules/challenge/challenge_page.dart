@@ -1,6 +1,6 @@
 import 'package:alfabetokids_web/share/models/challenge_widget.dart';
 import 'package:alfabetokids_web/share/models/list_levels_widget.dart';
-import 'package:alfabetokids_web/share/widgets/appbar_widget.dart';
+import 'package:alfabetokids_web/share/widgets/appbar_widget/appbar_widget.dart';
 import 'package:flutter/material.dart';
 
 class ChallengePage extends StatelessWidget {
@@ -26,7 +26,7 @@ class ChallengePage extends StatelessWidget {
             preferredSize: Size.fromHeight(120),
             child: AppBarWidget(title: "",),
           ),
-          body: ChallengeWidget(),
+          body: ChallengeWidget(category: "frutas", name: "pera"),
         ),
       ),
     );

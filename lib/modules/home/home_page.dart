@@ -1,5 +1,5 @@
 import 'package:alfabetokids_web/share/models/buttons_menu_widget.dart';
-import 'package:alfabetokids_web/share/widgets/logo_widget.dart';
+import 'package:alfabetokids_web/share/widgets/logo_widget/logo_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        height: MediaQuery.maybeOf(context)!.size.height*1.1,
+        height: MediaQuery.maybeOf(context)!.size.height,
         decoration: const BoxDecoration(
             gradient: LinearGradient(
               end: Alignment(0, 0.5),

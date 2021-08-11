@@ -49,7 +49,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
 
               Text(widget.title, style: TextStyles.title),
 
-              SizedBox(width: MediaQuery.of(context).size.width*0.05,),
+              SizedBox(width: MediaQuery.of(context).size.width*0.07,),
 
               if(widget.title !="Níveis" && widget.title!= "Temas" && widget.title != "Sobre") GestureDetector(
                 onTap: () async {

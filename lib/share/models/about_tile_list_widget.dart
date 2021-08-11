@@ -1,4 +1,4 @@
-import 'package:alfabetokids_web/share/widgets/about_tile_widget.dart';
+import 'package:alfabetokids_web/share/widgets/about_tile_widget/about_tile_widget.dart';
 import 'package:flutter/material.dart';
 
 class AboutTileListWidget extends StatelessWidget {

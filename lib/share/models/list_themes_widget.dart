@@ -1,6 +1,6 @@
 import 'package:alfabetokids_web/share/themes/app_colors.dart';
 import 'package:alfabetokids_web/share/themes/app_images.dart';
-import 'package:alfabetokids_web/share/widgets/card_widget.dart';
+import 'package:alfabetokids_web/share/widgets/card_widget/card_widget.dart';
 import 'package:flutter/material.dart';
 
 class ListThemesWidget extends StatefulWidget {

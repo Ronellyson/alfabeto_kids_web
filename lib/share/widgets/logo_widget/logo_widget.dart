@@ -7,12 +7,9 @@ class LogoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: MediaQuery.maybeOf(context)!.size.height <= 640 ? MediaQuery.maybeOf(context)!.size.height*0.25 : MediaQuery.maybeOf(context)!.size.height*0.3,
       alignment: Alignment.center,
-      child: Padding(
-        padding: const EdgeInsets.only(top: 60),
-        child: Image.asset(AppImages.logo, width: 340,),
-      ),
+      child: Image.asset(AppImages.logo, width: 340,),
     );
   }
 }
