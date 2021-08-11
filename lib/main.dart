@@ -16,7 +16,7 @@ import 'package:flutter/material.dart';
 void main(){
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: 'challenge',
+    initialRoute: 'splash',
     routes: {
       'splash' : (context) => SplashPage(),
       'home' : (context) => HomePage(),
